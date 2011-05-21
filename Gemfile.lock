@@ -2,9 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.7)
-    daemons (1.1.3)
     diff-lcs (1.1.2)
-    eventmachine (0.12.10)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -48,16 +46,10 @@ GEM
       padrino-core (= 0.9.28)
     polyglot (0.3.1)
     rack (1.2.2)
-    rack-flash (0.1.1)
-      rack
     rake (0.8.7)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
-    thin (1.2.11)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     thor (0.14.6)
     tilt (1.3)
     treetop (1.4.9)
@@ -71,6 +63,4 @@ PLATFORMS
 
 DEPENDENCIES
   padrino (= 0.9.28)
-  rack-flash
   rake
-  thin
