@@ -1,3 +1,5 @@
+# Padrino PJAX Demo
+
 I thought defunkt's pjax example was cool: <https://github.com/defunkt/jquery-pjax/tree/heroku>
 Just for fun thought it would be interesting to enable Padrino on top of Sinatra to clean up the example...
 
