@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title><%= @title ? "#{@title} - " : nil %> pjax</title>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "jquery", "jquery.cookie", "pages", "jquery.pjax" %>
+  <script type="text/javascript">
+    $(function(){
+      $('ul a').pjax('#main') // pjax call
+    })
+  </script>
+</head>
+<pre>
+
+               ／￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+               |　<b>It's <%= Time.now.strftime '%I:%M:%S %p' %></b>
+               ＼＿　 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+        .--.     (  )
+       /    \   ( )
+      ## a  a  .
+      (   '._)
+       |'-- |
+     _.\___/_   ___<label><%= check_box_tag "pjax" %>pjax</label>___
+   ."\> \Y/|<'.  '._.-'
+  /  \ \_\/ /  '-' /
+  | --'\_/|/ |   _/
+  |___.-' |  |`'`
+    |     |  |
+    |    / './
+   /__./` | |
+      \   | |
+       \  | |
+       ;  | |
+       /  | |
+      |___\_.\_
+      `-"--'---'
+<%= link_to "github.com/nesquena/padrino-pjax", "https://github.com/nesquena/padrino-pjax" %>
+</pre>
+
+<div id="main">
+  <%= yield %>
+</div>
+
+</html>
