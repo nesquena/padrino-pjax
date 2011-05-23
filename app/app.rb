@@ -1,4 +1,5 @@
 class PadrinoPjax < Padrino::Application
+  register Padrino::Rendering unless respond_to?(:fetch_template_file)
   register Padrino::Mailer
   register Padrino::Helpers
   enable :sessions
